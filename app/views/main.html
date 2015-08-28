@@ -1,0 +1,29 @@
+<!--<div map-lazy-load="http://maps.google.com/maps/api/js">
+  <map center="41,-87" zoom="3"></map>
+</div>
+<div style="margin-top: 10px"></div> -->
+
+<form id="form" role="form">
+    <div class="form-group move-down">
+        <label for="Autocomplete">Generic Autocomplete</label>
+        <input type="text" id="Autocomplete" class="form-control" ng-autocomplete ng-model="result1" />
+    </div>
+    <div>result: {{result1}}</div>
+</form>
+
+<input places-auto-complete="" size="80" ng-model="address" xxx-component-restrictions="{country:'us'}" types="['geocode']" on-place-changed="placeChanged(place)" class="ng-valid ng-dirty" placeholder="Digite um local" autocomplete="off">
+
+
+<div map-lazy-load="http://maps.google.com/maps/api/js">
+  <map center="36.964645, -122.01523" zoom="18" tilt="45" on-click="placeMarker()">
+    <marker position="-25.363882,131.044922" title="Hello World!"></marker>
+  </map>
+</div>
+
+<!--<map center="-34.397, 150.644" zoom="8" pan-control="false" zoom-control="true" zoom-control-options="{style: 'SMALL'}">
+  <map-autocomplete placeholder="{{ 'Type a place here...' }}" position="{{google.maps.ControlPosition.TOP_LEFT}}" />
+</map> -->
+
+<!--
+  <kml-layer url="http://api.flickr.com/services/feeds/geo/?g=322338@N20&amp;lang=en-us&amp;format=feed-georss">
+  </kml-layer> -->
